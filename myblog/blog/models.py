@@ -4,7 +4,7 @@ from django.utils  import timezone
 
 #create=ing a post method to create tables in the database
 class Post(models.Model):
-    suthor = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     title = models.CharField(max_length = 200)
     text = models.TextField()
     created_date = models.DateTimeField(default = timezone.now)
