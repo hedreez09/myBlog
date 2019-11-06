@@ -2,4 +2,4 @@ Django
 pytz
 sqlparse
 mysql-connector
-mysqlclient
+mysqlclient 

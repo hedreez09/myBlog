@@ -14,7 +14,16 @@
         <p>published: 1.06.2019, 12:19</p>
         <h2><a href="">My first post</a></h2>
         <p>A man is a reflection of his thought</p>
-
+    </div>
+    <div>
+        {% for post in posts %}
+        <div>
+            <p>{{post.published_date}}</p>
+            <h2><a href="">{{post.title}}</a></h2>
+            <p>{{post.text|linebreaksbr}}</p>
+        </div>
+        {% endfor %}
+    </div>
     <div>
         <p>published: 1.11.2019, 12:22</p>
         <h2><a href="">My second post</a></h2>
